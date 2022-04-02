@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+//Font Colors
+$very-dark-cyan: hsl(183, 100%, 15%);
+$strong-cyan: hsl(172, 67%, 45%);
+$dark-grayish-cyan: hsl(186, 14%, 43%);
+$grayish-cyan: hsl(184, 14%, 56%);
+$light-grayish-cyan: hsl(185, 41%, 84%);
+$very-light-grayish-cyan: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+
+body {
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+}
+
+//Desktop
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+//Mobile
+@media screen and (min-width: 375px) {
+}
