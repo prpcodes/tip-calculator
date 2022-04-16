@@ -1,18 +1,37 @@
-.App {
-  text-align: center;
+:root {
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+  font-family: 'Space Mono', monospace;
+
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+
+  --mobile: 375px;
+  --desktop: 1440px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App {
+  background-color: #c5e4e7;
+  height: 100vh;
+  color: #3d6666;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-button {
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-end;
+  h1 {
+    font-size: 38px;
+    margin: 0px;
+    margin-bottom: 40px;
+  }
+  section {
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 32px;
+  }
 }
