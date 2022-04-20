@@ -1,26 +1,41 @@
 .tip {
-  text-align: left;
-}
+  margin-top: 32px;
+  div {
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 8px));
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
 
-.tip-buttons {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-}
+  button {
+    background-color: var(--very-dark-cyan);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    height: 48px;
+    font-size: 24px;
+    width: 100%;
+  }
 
-button {
-  background-color: var(--very-dark-cyan);
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  height: 48px;
-}
+  button:active {
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+  }
 
-button:active {
-  background-color: var(--very-dark-cyan);
-  color: var(--strong-cyan);
+  input {
+    width: 100%;
+    padding: 0;
+    color: var(--grayish-cyan);
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--very-light-grayish-cyan);
+  }
+
+  ::placeholder {
+    color: var(--grayish-cyan);
+  }
 }

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './Total.scss';
 
 export default function TotalComponent() {
   const [tipAmount, setTipAmount] = useState(0);
@@ -6,8 +7,22 @@ export default function TotalComponent() {
 
   return (
     <div className="total">
-      <div className="tip-amount">{tipAmount}</div>
-      <div className="total-amount">{totalAmount}</div>
+      <div>
+        <div className="amount">
+          <div>
+            <h3>Tip Amount</h3>
+            <p>/ person</p>
+          </div>
+          <p>${tipAmount}</p>
+        </div>
+        <div className="amount">
+          <div>
+            <h3>Total</h3>
+            <p>/ person</p>
+          </div>
+          <p>${totalAmount}</p>
+        </div>
+      </div>
       <button className="reset">RESET</button>
     </div>
   );

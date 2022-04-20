@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Tip.scss';
 
 export default function TipComponent() {
-  const [tipPercent, setTipPercent] = useState(0);
+  const [tipPercent, setTipPercent] = useState('');
   return (
     <div className="tip">
       <h2>Select Tip %</h2>
@@ -12,7 +12,7 @@ export default function TipComponent() {
         <button onClick={() => setTipPercent(15)}>15%</button>
         <button onClick={() => setTipPercent(25)}>25%</button>
         <button onClick={() => setTipPercent(50)}>50%</button>
-        <input type="number" value={tipPercent} placeholder="Custom" onChange={(e) => setTipPercent(e.target.value)} />
+        <input type="text" value={tipPercent} placeholder="Custom" onChange={(e) => setTipPercent(e.target.value)} />
       </div>
     </div>
   );
